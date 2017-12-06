@@ -52,7 +52,7 @@ io.on('connection',function(socket){
 			}, 'components');
 			var publicComponents = key.exportKey('components-public');
 			console.log(publicComponents);
- 
+
 			var encrypted = key.encrypt(texto, 'base64');
 			console.log('encrypted: ', encrypted);
 			var decrypted = key.decrypt(encrypted, 'utf8');
@@ -71,9 +71,9 @@ io.on('connection',function(socket){
 			};
 			mensajes.push(datos1);
 			mensajese.push(men);
-		
+
 			console.log("mensaje enviado ");
-		
+
 			io.sockets.emit('mensajes',mensajes);
 			io.sockets.emit('mensajese',mensajese);
 		//}
