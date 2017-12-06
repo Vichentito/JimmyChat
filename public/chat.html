@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RSA</title>
+	<script src="/socket.io/socket.io.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<script src="css.js"></script>
+	<link href="css.css" rel="stylesheet">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</head>
+<body>
+	<h1>Mi pagina</h1>
+	<div class="container" style="margin-bottom: 450px">
+	<div id="mensajes"  style=" float:left; overflow-y: scroll;width: 500px; height: 400px; background-color: rgb(40,40,40);"></div>
+	<div id="mensajese" style=" float:left; margin-left: 30px; overflow: scroll;width: 500px; height: 400px; background-color: rgb(40,40,40);"></div>
+	</div>
+	<div class="container">
+	<form  onsubmit="return addMensaje(this)">
+		<input type="text" id="firma" placeholder="Firma"  size="1">
+		<input type="text" id="texto" placeholder="Mensaje" style="margin-bottom: 10px;"><br>
+		<input type="submit" class='btn btn-primary' value="enviar">
+	</form>
+	</div>
+	<br>
+</body>
+</html>
